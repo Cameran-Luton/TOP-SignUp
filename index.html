@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign-Up Form</title>
   </head>
   <body>
@@ -18,48 +24,49 @@
         <img class="logo" src="Assets/imgs/odin-lined.png" alt="" />
       </div>
       <div class="content">
-        <p class="info">
+        <div class="spacer"></div>
+        <p class="info roboto-bold">
           This is not a real online service! you know you need something like
-          this in your life to help you realize your deepest dreams sign up now
-          to get started
+          this in your life to help you realize your deepest dreams. <br />Sign
+          up now to get started.
         </p>
-        <pc class="info">you know you want to.</pc>
+        <p class="info sign-off roboto-bold">You know you want to.</p>
         <div class="form">
-          <h2>Let's do this</h2>
+          <h2 class="roboto-bold form-title">Let's do this!</h2>
           <form action="example.com/path" method="post">
-            <div class="form_row">
-              <div class="form_field">
-                <label for="first_name">First Name</label>
+            <div class="form_row roboto-bold">
+              <div class="form_field r">
+                <label for="first_name">FIRST NAME</label>
                 <input type="text" name="first_name" id="first_name" />
               </div>
               <div class="form_field">
-                <label for="last_name">Last Name</label>
+                <label for="last_name">LAST NAME</label>
                 <input type="text" name="last_name" id="last_name" />
               </div>
             </div>
-            <div class="form_row">
+            <div class="form_row roboto-bold">
               <div class="form_field">
-                <label for="email">Email</label>
+                <label for="email">EMAIL</label>
                 <input type="email" name="email" id="email" />
               </div>
               <div class="form_field">
-                <label for="number">Number</label>
+                <label for="number">NUMBER</label>
                 <input type="number" name="number" id="number" />
               </div>
             </div>
-            <div class="form_row">
+            <div class="form_row roboto-bold">
               <div class="form_field">
-                <label for="password">Password</label>
+                <label for="password">PASSWORD</label>
                 <input type="password" name="password" id="password" />
               </div>
               <div class="form_field">
-                <label for="c_password">Confirm Password</label>
+                <label for="c_password">CONFIRM PASSWORD</label>
                 <input type="password" name="c_password" id="c_password" />
               </div>
             </div>
           </form>
         </div>
-        <button class="create_btn">Create Account</button>
+        <button class="create_btn roboto-bold">Create Account</button>
         <p class="h_account">
           Already have an account ? <a class="log_in" href="">Log in</a>
         </p>

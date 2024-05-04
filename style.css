@@ -1,4 +1,10 @@
 :root {
+  --text-grey: #5b5b5b;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-grey);
 }
 
 body {
@@ -20,6 +26,7 @@ body {
 .trees {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .content {
   display: flex;
@@ -27,10 +34,11 @@ body {
   width: 66vw;
 }
 .logo {
-  height: 300px;
+  height: 200px;
+  object-fit: cover;
   position: absolute;
   display: flex;
-  top: 300px;
+  top: 270px;
 }
 .blur {
   display: flex;
@@ -38,15 +46,24 @@ body {
   opacity: 50%;
   background-color: black;
   width: 100%;
-  height: 400px;
+  height: 250px;
   top: 250px;
 }
 .info {
-  padding: 20px;
-  font-size: 2rem;
+  color: black;
+  display: flex;
+  width: min(66vw, 1000px);
+  padding: 10px 10px 10px 10px;
+  font-size: 1.7rem;
+}
+
+.sign-off {
+  position: relative;
+  bottom: 20px;
 }
 
 .form {
+  box-shadow: 10px 5px 5px lightgray;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -63,6 +80,8 @@ body {
 }
 
 .form_row {
+  letter-spacing: 1.5px;
+  margin: 10px;
   display: flex;
   gap: 50px;
 }
@@ -70,11 +89,53 @@ body {
   display: flex;
   flex-direction: column;
 }
+.spacer {
+  height: 16vh;
+}
+
+label {
+  position: relative;
+  left: 5px;
+}
+
+input {
+  outline: none;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: solid 1px var(--text-grey);
+  padding: 5px;
+  margin: 5px;
+  height: 35px;
+  width: 300px;
+  flex-shrink: 1;
+}
+
+input:focus {
+  border: solid 1px blue;
+}
+
+input:invalid {
+  border: solid 1px red;
+}
 
 .create_btn {
+  font-size: 1rem;
+  color: whitesmoke;
   margin: 30px;
-  background-color: green;
+  background-color: #7a4d22;
   border-radius: 10px;
   width: 200px;
   height: 50px;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.form-title {
+  position: relative;
+  left: 25dpx;
 }
